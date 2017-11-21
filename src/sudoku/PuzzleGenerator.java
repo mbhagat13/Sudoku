@@ -21,7 +21,7 @@ public class PuzzleGenerator {
         ArrayList<String> puzzles = new ArrayList<String>();
         String puzzle;
         Random rand = new Random();
-        int p_index = rand.nextInt(30); // integer from 0 to 5 (number of puzzles ready)
+        int p_index = rand.nextInt(5); // integer from 0 to 5 (number of puzzles ready)
         int[][] output = new int[9][9];
         int i;
         char c;

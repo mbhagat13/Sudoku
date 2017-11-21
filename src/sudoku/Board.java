@@ -533,6 +533,7 @@ public class Board extends javax.swing.JFrame {
 	
 	
 	//returns false when textfield is blank
+	//
 	private boolean readValsIn()
 	{
 		try{

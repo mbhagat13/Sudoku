@@ -23,7 +23,7 @@ public class PuzzleGenerator {
         Random rand = new Random();
         int p_index = rand.nextInt(5); // integer from 0 to 5 (number of puzzles ready)
         int[][] output = new int[9][9];
-        int i, j;
+        int i;
         char c;
         int x;
         
@@ -35,13 +35,10 @@ public class PuzzleGenerator {
         // Get random puzzle from list and generate puzzle array
         puzzle = puzzles.get(p_index);
         for (i = 0; i < puzzle.length(); i++) {
-            for (j = 0; j < 9; j ++) {
-                c = puzzle.charAt((i*9)+j);
+                c = puzzle.charAt(i);
                 x = Character.getNumericValue(c);
-                output[i][j] = x;
-            }
+                output[i/9][i%9] = x;
         }
-        
         return output;
         
     }

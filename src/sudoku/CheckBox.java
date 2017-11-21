@@ -11,60 +11,26 @@ package sudoku;
  */
 public class CheckBox implements Check {
       
+	@Override
 	public boolean checkMoves(int[][] uservalues) {
-		int[] validity = new int[9];
-		int startIndexX = 0;
-		int startIndexY = 0;
+		int[] validity;
 
-		for (int i = 0; i <= 9; i++) {
-
-			for (int v = 0; v < 9; v = v + 3) {
-				startIndexY = v;
-
-				for (int h = 0; h < 9; h = h + 3) {
-					startIndexX = h;
-
-					for (int x = startIndexX; x < 3; x++) {
-						validity = new int[9];
-
-						for (int y = startIndexY; y < 3; y++) {
-							if (uservalues[x][y] == 1) {
-								validity[0] = validity[0] + 1;
-							}
-							if (uservalues[x][y] == 2) {
-								validity[1] = validity[1] + 2;
-							}
-							if (uservalues[x][y] == 3) {
-								validity[2] = validity[2] + 3;
-							}
-							if (uservalues[x][y] == 4) {
-								validity[3] = validity[3] + 4;
-							}
-							if (uservalues[x][y] == 5) {
-								validity[4] = validity[4] + 5;
-							}
-							if (uservalues[x][y] == 6) {
-								validity[5] = validity[5] + 6;
-							}
-							if (uservalues[x][y] == 7) {
-								validity[6] = validity[6] + 7;
-							}
-							if (uservalues[x][y] == 8) {
-								validity[7] = validity[7] + 8;
-							}
-							if (uservalues[x][y] == 9) {
-								validity[8] = validity[8] + 9;
-							}
-
-						}
-
-					}
-					for (int k = 0; k < 9; k++) {
-						if (validity[k] != k + 1) {
-							return false;
+		for (int v = 0; v < 9; v += 3) {
+			for (int h = 0; h < 9; h += 3) {
+				validity = new int[9];
+				for (int x = h; x < h+3; x++) {
+					for (int y = v; y < v+3; y++) {
+						if(uservalues[y][x] >= 1 && uservalues[y][x] <= 9)
+						{
+							validity[uservalues[y][x]-1]++;
 						}
 					}
 
+				}
+				for (int k = 0; k < 9; k++) {
+					if (validity[k] != 1) {
+						return false;
+					}
 				}
 			}
 		}

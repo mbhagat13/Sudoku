@@ -5,6 +5,7 @@
  */
 package sudoku;
 
+import java.awt.Color;
 import java.util.Random;
 
 /**
@@ -443,87 +444,87 @@ public class Board extends javax.swing.JFrame {
 	
 	private void resetAll()
 	{
-		_1x1.setText(" "); _1x1.setEditable(true);
-		_1x2.setText(" "); _1x2.setEditable(true);
-		_1x3.setText(" "); _1x3.setEditable(true);
-		_1x4.setText(" "); _1x4.setEditable(true);
-		_1x5.setText(" "); _1x5.setEditable(true);
-		_1x6.setText(" "); _1x6.setEditable(true);
-		_1x7.setText(" "); _1x7.setEditable(true);
-		_1x8.setText(" "); _1x8.setEditable(true);
-		_1x9.setText(" "); _1x9.setEditable(true);
-		_2x1.setText(" "); _2x1.setEditable(true);
-		_2x2.setText(" "); _2x2.setEditable(true);
-		_2x3.setText(" "); _2x3.setEditable(true);
-		_2x4.setText(" "); _2x4.setEditable(true);
-		_2x5.setText(" "); _2x5.setEditable(true);
-		_2x6.setText(" "); _2x6.setEditable(true);
-		_2x7.setText(" "); _2x7.setEditable(true);
-		_2x8.setText(" "); _2x8.setEditable(true);
-		_2x9.setText(" "); _2x9.setEditable(true);
-		_3x1.setText(" "); _3x1.setEditable(true);
-		_3x2.setText(" "); _3x2.setEditable(true);
-		_3x3.setText(" "); _3x3.setEditable(true);
-		_3x4.setText(" "); _3x4.setEditable(true);
-		_3x5.setText(" "); _3x5.setEditable(true);
-		_3x6.setText(" "); _3x6.setEditable(true);
-		_3x7.setText(" "); _3x7.setEditable(true);
-		_3x8.setText(" "); _3x8.setEditable(true);
-		_3x9.setText(" "); _3x9.setEditable(true);
-		_4x1.setText(" "); _4x1.setEditable(true);
-		_4x2.setText(" "); _4x2.setEditable(true);
-		_4x3.setText(" "); _4x3.setEditable(true);
-		_4x4.setText(" "); _4x4.setEditable(true);
-		_4x5.setText(" "); _4x5.setEditable(true);
-		_4x6.setText(" "); _4x6.setEditable(true);
-		_4x7.setText(" "); _4x7.setEditable(true);
-		_4x8.setText(" "); _4x8.setEditable(true);
-		_4x9.setText(" "); _4x9.setEditable(true);
-		_5x1.setText(" "); _5x1.setEditable(true);
-		_5x2.setText(" "); _5x2.setEditable(true);
-		_5x3.setText(" "); _5x3.setEditable(true);
-		_5x4.setText(" "); _5x4.setEditable(true);
-		_5x5.setText(" "); _5x5.setEditable(true);
-		_5x6.setText(" "); _5x6.setEditable(true);
-		_5x7.setText(" "); _5x7.setEditable(true);
-		_5x8.setText(" "); _5x8.setEditable(true);
-		_5x9.setText(" "); _5x9.setEditable(true);
-		_6x1.setText(" "); _6x1.setEditable(true);
-		_6x2.setText(" "); _6x2.setEditable(true);
-		_6x3.setText(" "); _6x3.setEditable(true);
-		_6x4.setText(" "); _6x4.setEditable(true);
-		_6x5.setText(" "); _6x5.setEditable(true);
-		_6x6.setText(" "); _6x6.setEditable(true);
-		_6x7.setText(" "); _6x7.setEditable(true);
-		_6x8.setText(" "); _6x8.setEditable(true);
-		_6x9.setText(" "); _6x9.setEditable(true);
-		_7x1.setText(" "); _7x1.setEditable(true);
-		_7x2.setText(" "); _7x2.setEditable(true);
-		_7x3.setText(" "); _7x3.setEditable(true);
-		_7x4.setText(" "); _7x4.setEditable(true);
-		_7x5.setText(" "); _7x5.setEditable(true);
-		_7x6.setText(" "); _7x6.setEditable(true);
-		_7x7.setText(" "); _7x7.setEditable(true);
-		_7x8.setText(" "); _7x8.setEditable(true);
-		_7x9.setText(" "); _7x9.setEditable(true);
-		_8x1.setText(" "); _8x1.setEditable(true);
-		_8x2.setText(" "); _8x2.setEditable(true);
-		_8x3.setText(" "); _8x3.setEditable(true);
-		_8x4.setText(" "); _8x4.setEditable(true);
-		_8x5.setText(" "); _8x5.setEditable(true);
-		_8x6.setText(" "); _8x6.setEditable(true);
-		_8x7.setText(" "); _8x7.setEditable(true);
-		_8x8.setText(" "); _8x8.setEditable(true);
-		_8x9.setText(" "); _8x9.setEditable(true);
-		_9x1.setText(" "); _9x1.setEditable(true);
-		_9x2.setText(" "); _9x2.setEditable(true);
-		_9x3.setText(" "); _9x3.setEditable(true);
-		_9x4.setText(" "); _9x4.setEditable(true);
-		_9x5.setText(" "); _9x5.setEditable(true);
-		_9x6.setText(" "); _9x6.setEditable(true);
-		_9x7.setText(" "); _9x7.setEditable(true);
-		_9x8.setText(" "); _9x8.setEditable(true);
-		_9x9.setText(" "); _9x9.setEditable(true);
+		_1x1.setText(" "); _1x1.setEditable(true); _1x1.setForeground(Color.black);
+		_1x2.setText(" "); _1x2.setEditable(true); _1x2.setForeground(Color.black);
+		_1x3.setText(" "); _1x3.setEditable(true); _1x3.setForeground(Color.black);
+		_1x4.setText(" "); _1x4.setEditable(true); _1x4.setForeground(Color.black);
+		_1x5.setText(" "); _1x5.setEditable(true); _1x5.setForeground(Color.black);
+		_1x6.setText(" "); _1x6.setEditable(true); _1x6.setForeground(Color.black);
+		_1x7.setText(" "); _1x7.setEditable(true); _1x7.setForeground(Color.black);
+		_1x8.setText(" "); _1x8.setEditable(true); _1x8.setForeground(Color.black);
+		_1x9.setText(" "); _1x9.setEditable(true); _1x9.setForeground(Color.black);
+		_2x1.setText(" "); _2x1.setEditable(true); _2x1.setForeground(Color.black);
+		_2x2.setText(" "); _2x2.setEditable(true); _2x2.setForeground(Color.black);
+		_2x3.setText(" "); _2x3.setEditable(true); _2x3.setForeground(Color.black);
+		_2x4.setText(" "); _2x4.setEditable(true); _2x4.setForeground(Color.black);
+		_2x5.setText(" "); _2x5.setEditable(true); _2x5.setForeground(Color.black);
+		_2x6.setText(" "); _2x6.setEditable(true); _2x6.setForeground(Color.black);
+		_2x7.setText(" "); _2x7.setEditable(true); _2x7.setForeground(Color.black);
+		_2x8.setText(" "); _2x8.setEditable(true); _2x8.setForeground(Color.black);
+		_2x9.setText(" "); _2x9.setEditable(true); _2x9.setForeground(Color.black);
+		_3x1.setText(" "); _3x1.setEditable(true); _3x1.setForeground(Color.black);
+		_3x2.setText(" "); _3x2.setEditable(true); _3x2.setForeground(Color.black);
+		_3x3.setText(" "); _3x3.setEditable(true); _3x3.setForeground(Color.black);
+		_3x4.setText(" "); _3x4.setEditable(true); _3x4.setForeground(Color.black);
+		_3x5.setText(" "); _3x5.setEditable(true); _3x5.setForeground(Color.black);
+		_3x6.setText(" "); _3x6.setEditable(true); _3x6.setForeground(Color.black);
+		_3x7.setText(" "); _3x7.setEditable(true); _3x7.setForeground(Color.black);
+		_3x8.setText(" "); _3x8.setEditable(true); _3x8.setForeground(Color.black);
+		_3x9.setText(" "); _3x9.setEditable(true); _3x9.setForeground(Color.black);
+		_4x1.setText(" "); _4x1.setEditable(true); _4x1.setForeground(Color.black);
+		_4x2.setText(" "); _4x2.setEditable(true); _4x2.setForeground(Color.black);
+		_4x3.setText(" "); _4x3.setEditable(true); _4x3.setForeground(Color.black);
+		_4x4.setText(" "); _4x4.setEditable(true); _4x4.setForeground(Color.black);
+		_4x5.setText(" "); _4x5.setEditable(true); _4x5.setForeground(Color.black);
+		_4x6.setText(" "); _4x6.setEditable(true); _4x6.setForeground(Color.black);
+		_4x7.setText(" "); _4x7.setEditable(true); _4x7.setForeground(Color.black);
+		_4x8.setText(" "); _4x8.setEditable(true); _4x8.setForeground(Color.black);
+		_4x9.setText(" "); _4x9.setEditable(true); _4x9.setForeground(Color.black);
+		_5x1.setText(" "); _5x1.setEditable(true); _5x1.setForeground(Color.black);
+		_5x2.setText(" "); _5x2.setEditable(true); _5x2.setForeground(Color.black);
+		_5x3.setText(" "); _5x3.setEditable(true); _5x3.setForeground(Color.black);
+		_5x4.setText(" "); _5x4.setEditable(true); _5x4.setForeground(Color.black);
+		_5x5.setText(" "); _5x5.setEditable(true); _5x5.setForeground(Color.black);
+		_5x6.setText(" "); _5x6.setEditable(true); _5x6.setForeground(Color.black);
+		_5x7.setText(" "); _5x7.setEditable(true); _5x7.setForeground(Color.black);
+		_5x8.setText(" "); _5x8.setEditable(true); _5x8.setForeground(Color.black);
+		_5x9.setText(" "); _5x9.setEditable(true); _5x9.setForeground(Color.black);
+		_6x1.setText(" "); _6x1.setEditable(true); _6x1.setForeground(Color.black);
+		_6x2.setText(" "); _6x2.setEditable(true); _6x2.setForeground(Color.black);
+		_6x3.setText(" "); _6x3.setEditable(true); _6x3.setForeground(Color.black);
+		_6x4.setText(" "); _6x4.setEditable(true); _6x4.setForeground(Color.black);
+		_6x5.setText(" "); _6x5.setEditable(true); _6x5.setForeground(Color.black);
+		_6x6.setText(" "); _6x6.setEditable(true); _6x6.setForeground(Color.black);
+		_6x7.setText(" "); _6x7.setEditable(true); _6x7.setForeground(Color.black);
+		_6x8.setText(" "); _6x8.setEditable(true); _6x8.setForeground(Color.black);
+		_6x9.setText(" "); _6x9.setEditable(true); _6x9.setForeground(Color.black);
+		_7x1.setText(" "); _7x1.setEditable(true); _7x1.setForeground(Color.black);
+		_7x2.setText(" "); _7x2.setEditable(true); _7x2.setForeground(Color.black);
+		_7x3.setText(" "); _7x3.setEditable(true); _7x3.setForeground(Color.black);
+		_7x4.setText(" "); _7x4.setEditable(true); _7x4.setForeground(Color.black);
+		_7x5.setText(" "); _7x5.setEditable(true); _7x5.setForeground(Color.black);
+		_7x6.setText(" "); _7x6.setEditable(true); _7x6.setForeground(Color.black);
+		_7x7.setText(" "); _7x7.setEditable(true); _7x7.setForeground(Color.black);
+		_7x8.setText(" "); _7x8.setEditable(true); _7x8.setForeground(Color.black);
+		_7x9.setText(" "); _7x9.setEditable(true); _7x9.setForeground(Color.black);
+		_8x1.setText(" "); _8x1.setEditable(true); _8x1.setForeground(Color.black);
+		_8x2.setText(" "); _8x2.setEditable(true); _8x2.setForeground(Color.black);
+		_8x3.setText(" "); _8x3.setEditable(true); _8x3.setForeground(Color.black);
+		_8x4.setText(" "); _8x4.setEditable(true); _8x4.setForeground(Color.black);
+		_8x5.setText(" "); _8x5.setEditable(true); _8x5.setForeground(Color.black);
+		_8x6.setText(" "); _8x6.setEditable(true); _8x6.setForeground(Color.black);
+		_8x7.setText(" "); _8x7.setEditable(true); _8x7.setForeground(Color.black);
+		_8x8.setText(" "); _8x8.setEditable(true); _8x8.setForeground(Color.black);
+		_8x9.setText(" "); _8x9.setEditable(true); _8x9.setForeground(Color.black);
+		_9x1.setText(" "); _9x1.setEditable(true); _9x1.setForeground(Color.black);
+		_9x2.setText(" "); _9x2.setEditable(true); _9x2.setForeground(Color.black);
+		_9x3.setText(" "); _9x3.setEditable(true); _9x3.setForeground(Color.black);
+		_9x4.setText(" "); _9x4.setEditable(true); _9x4.setForeground(Color.black);
+		_9x5.setText(" "); _9x5.setEditable(true); _9x5.setForeground(Color.black);
+		_9x6.setText(" "); _9x6.setEditable(true); _9x6.setForeground(Color.black);
+		_9x7.setText(" "); _9x7.setEditable(true); _9x7.setForeground(Color.black);
+		_9x8.setText(" "); _9x8.setEditable(true); _9x8.setForeground(Color.black);
+		_9x9.setText(" "); _9x9.setEditable(true); _9x9.setForeground(Color.black);
 		
 		userVals = new int[9][9];
 		vals = new int[9][9];
@@ -625,87 +626,87 @@ public class Board extends javax.swing.JFrame {
 	
 	public void setValBoard(int x, int y)
 	{
-		if(x == 1 && y == 1){_1x1.setText(String.valueOf(vals[0][0])); _1x1.setEditable(false);} 
-		else if(x == 1 && y == 2){_1x2.setText(String.valueOf(vals[1][0])); _1x2.setEditable(false);} 
-		else if(x == 1 && y == 3){_1x3.setText(String.valueOf(vals[2][0])); _1x3.setEditable(false);} 
-		else if(x == 1 && y == 4){_1x4.setText(String.valueOf(vals[3][0])); _1x4.setEditable(false);} 
-		else if(x == 1 && y == 5){_1x5.setText(String.valueOf(vals[4][0])); _1x5.setEditable(false);} 
-		else if(x == 1 && y == 6){_1x6.setText(String.valueOf(vals[5][0])); _1x6.setEditable(false);} 
-		else if(x == 1 && y == 7){_1x7.setText(String.valueOf(vals[6][0])); _1x7.setEditable(false);} 
-		else if(x == 1 && y == 8){_1x8.setText(String.valueOf(vals[7][0])); _1x8.setEditable(false);} 
-		else if(x == 1 && y == 9){_1x9.setText(String.valueOf(vals[8][0])); _1x9.setEditable(false);} 
-		else if(x == 2 && y == 1){_2x1.setText(String.valueOf(vals[0][1])); _2x1.setEditable(false);} 
-		else if(x == 2 && y == 2){_2x2.setText(String.valueOf(vals[1][1])); _2x2.setEditable(false);} 
-		else if(x == 2 && y == 3){_2x3.setText(String.valueOf(vals[2][1])); _2x3.setEditable(false);} 
-		else if(x == 2 && y == 4){_2x4.setText(String.valueOf(vals[3][1])); _2x4.setEditable(false);} 
-		else if(x == 2 && y == 5){_2x5.setText(String.valueOf(vals[4][1])); _2x5.setEditable(false);} 
-		else if(x == 2 && y == 6){_2x6.setText(String.valueOf(vals[5][1])); _2x6.setEditable(false);} 
-		else if(x == 2 && y == 7){_2x7.setText(String.valueOf(vals[6][1])); _2x7.setEditable(false);} 
-		else if(x == 2 && y == 8){_2x8.setText(String.valueOf(vals[7][1])); _2x8.setEditable(false);} 
-		else if(x == 2 && y == 9){_2x9.setText(String.valueOf(vals[8][1])); _2x9.setEditable(false);} 
-		else if(x == 3 && y == 1){_3x1.setText(String.valueOf(vals[0][2])); _3x1.setEditable(false);} 
-		else if(x == 3 && y == 2){_3x2.setText(String.valueOf(vals[1][2])); _3x2.setEditable(false);} 
-		else if(x == 3 && y == 3){_3x3.setText(String.valueOf(vals[2][2])); _3x3.setEditable(false);} 
-		else if(x == 3 && y == 4){_3x4.setText(String.valueOf(vals[3][2])); _3x4.setEditable(false);} 
-		else if(x == 3 && y == 5){_3x5.setText(String.valueOf(vals[4][2])); _3x5.setEditable(false);} 
-		else if(x == 3 && y == 6){_3x6.setText(String.valueOf(vals[5][2])); _3x6.setEditable(false);} 
-		else if(x == 3 && y == 7){_3x7.setText(String.valueOf(vals[6][2])); _3x7.setEditable(false);} 
-		else if(x == 3 && y == 8){_3x8.setText(String.valueOf(vals[7][2])); _3x8.setEditable(false);} 
-		else if(x == 3 && y == 9){_3x9.setText(String.valueOf(vals[8][2])); _3x9.setEditable(false);} 
-		else if(x == 4 && y == 1){_4x1.setText(String.valueOf(vals[0][3])); _4x1.setEditable(false);} 
-		else if(x == 4 && y == 2){_4x2.setText(String.valueOf(vals[1][3])); _4x2.setEditable(false);} 
-		else if(x == 4 && y == 3){_4x3.setText(String.valueOf(vals[2][3])); _4x3.setEditable(false);} 
-		else if(x == 4 && y == 4){_4x4.setText(String.valueOf(vals[3][3])); _4x4.setEditable(false);} 
-		else if(x == 4 && y == 5){_4x5.setText(String.valueOf(vals[4][3])); _4x5.setEditable(false);} 
-		else if(x == 4 && y == 6){_4x6.setText(String.valueOf(vals[5][3])); _4x6.setEditable(false);} 
-		else if(x == 4 && y == 7){_4x7.setText(String.valueOf(vals[6][3])); _4x7.setEditable(false);} 
-		else if(x == 4 && y == 8){_4x8.setText(String.valueOf(vals[7][3])); _4x8.setEditable(false);} 
-		else if(x == 4 && y == 9){_4x9.setText(String.valueOf(vals[8][3])); _4x9.setEditable(false);} 
-		else if(x == 5 && y == 1){_5x1.setText(String.valueOf(vals[0][4])); _5x1.setEditable(false);} 
-		else if(x == 5 && y == 2){_5x2.setText(String.valueOf(vals[1][4])); _5x2.setEditable(false);} 
-		else if(x == 5 && y == 3){_5x3.setText(String.valueOf(vals[2][4])); _5x3.setEditable(false);} 
-		else if(x == 5 && y == 4){_5x4.setText(String.valueOf(vals[3][4])); _5x4.setEditable(false);} 
-		else if(x == 5 && y == 5){_5x5.setText(String.valueOf(vals[4][4])); _5x5.setEditable(false);} 
-		else if(x == 5 && y == 6){_5x6.setText(String.valueOf(vals[5][4])); _5x6.setEditable(false);} 
-		else if(x == 5 && y == 7){_5x7.setText(String.valueOf(vals[6][4])); _5x7.setEditable(false);} 
-		else if(x == 5 && y == 8){_5x8.setText(String.valueOf(vals[7][4])); _5x8.setEditable(false);} 
-		else if(x == 5 && y == 9){_5x9.setText(String.valueOf(vals[8][4])); _5x9.setEditable(false);} 
-		else if(x == 6 && y == 1){_6x1.setText(String.valueOf(vals[0][5])); _6x1.setEditable(false);} 
-		else if(x == 6 && y == 2){_6x2.setText(String.valueOf(vals[1][5])); _6x2.setEditable(false);} 
-		else if(x == 6 && y == 3){_6x3.setText(String.valueOf(vals[2][5])); _6x3.setEditable(false);} 
-		else if(x == 6 && y == 4){_6x4.setText(String.valueOf(vals[3][5])); _6x4.setEditable(false);} 
-		else if(x == 6 && y == 5){_6x5.setText(String.valueOf(vals[4][5])); _6x5.setEditable(false);} 
-		else if(x == 6 && y == 6){_6x6.setText(String.valueOf(vals[5][5])); _6x6.setEditable(false);} 
-		else if(x == 6 && y == 7){_6x7.setText(String.valueOf(vals[6][5])); _6x7.setEditable(false);} 
-		else if(x == 6 && y == 8){_6x8.setText(String.valueOf(vals[7][5])); _6x8.setEditable(false);} 
-		else if(x == 6 && y == 9){_6x9.setText(String.valueOf(vals[8][5])); _6x9.setEditable(false);} 
-		else if(x == 7 && y == 1){_7x1.setText(String.valueOf(vals[0][6])); _7x1.setEditable(false);} 
-		else if(x == 7 && y == 2){_7x2.setText(String.valueOf(vals[1][6])); _7x2.setEditable(false);} 
-		else if(x == 7 && y == 3){_7x3.setText(String.valueOf(vals[2][6])); _7x3.setEditable(false);} 
-		else if(x == 7 && y == 4){_7x4.setText(String.valueOf(vals[3][6])); _7x4.setEditable(false);} 
-		else if(x == 7 && y == 5){_7x5.setText(String.valueOf(vals[4][6])); _7x5.setEditable(false);} 
-		else if(x == 7 && y == 6){_7x6.setText(String.valueOf(vals[5][6])); _7x6.setEditable(false);} 
-		else if(x == 7 && y == 7){_7x7.setText(String.valueOf(vals[6][6])); _7x7.setEditable(false);} 
-		else if(x == 7 && y == 8){_7x8.setText(String.valueOf(vals[7][6])); _7x8.setEditable(false);} 
-		else if(x == 7 && y == 9){_7x9.setText(String.valueOf(vals[8][6])); _7x9.setEditable(false);} 
-		else if(x == 8 && y == 1){_8x1.setText(String.valueOf(vals[0][7])); _8x1.setEditable(false);} 
-		else if(x == 8 && y == 2){_8x2.setText(String.valueOf(vals[1][7])); _8x2.setEditable(false);} 
-		else if(x == 8 && y == 3){_8x3.setText(String.valueOf(vals[2][7])); _8x3.setEditable(false);} 
-		else if(x == 8 && y == 4){_8x4.setText(String.valueOf(vals[3][7])); _8x4.setEditable(false);} 
-		else if(x == 8 && y == 5){_8x5.setText(String.valueOf(vals[4][7])); _8x5.setEditable(false);} 
-		else if(x == 8 && y == 6){_8x6.setText(String.valueOf(vals[5][7])); _8x6.setEditable(false);} 
-		else if(x == 8 && y == 7){_8x7.setText(String.valueOf(vals[6][7])); _8x7.setEditable(false);} 
-		else if(x == 8 && y == 8){_8x8.setText(String.valueOf(vals[7][7])); _8x8.setEditable(false);} 
-		else if(x == 8 && y == 9){_8x9.setText(String.valueOf(vals[8][7])); _8x9.setEditable(false);} 
-		else if(x == 9 && y == 1){_9x1.setText(String.valueOf(vals[0][8])); _9x1.setEditable(false);} 
-		else if(x == 9 && y == 2){_9x2.setText(String.valueOf(vals[1][8])); _9x2.setEditable(false);} 
-		else if(x == 9 && y == 3){_9x3.setText(String.valueOf(vals[2][8])); _9x3.setEditable(false);} 
-		else if(x == 9 && y == 4){_9x4.setText(String.valueOf(vals[3][8])); _9x4.setEditable(false);} 
-		else if(x == 9 && y == 5){_9x5.setText(String.valueOf(vals[4][8])); _9x5.setEditable(false);} 
-		else if(x == 9 && y == 6){_9x6.setText(String.valueOf(vals[5][8])); _9x6.setEditable(false);} 
-		else if(x == 9 && y == 7){_9x7.setText(String.valueOf(vals[6][8])); _9x7.setEditable(false);} 
-		else if(x == 9 && y == 8){_9x8.setText(String.valueOf(vals[7][8])); _9x8.setEditable(false);} 
-		else if(x == 9 && y == 9){_9x9.setText(String.valueOf(vals[8][8])); _9x9.setEditable(false);} 
+		if(x == 1 && y == 1){_1x1.setText(String.valueOf(vals[0][0])); _1x1.setEditable(false); _1x1.setForeground(Color.red); } 
+		else if(x == 1 && y == 2){_1x2.setText(String.valueOf(vals[1][0])); _1x2.setEditable(false); _1x2.setForeground(Color.red); } 
+		else if(x == 1 && y == 3){_1x3.setText(String.valueOf(vals[2][0])); _1x3.setEditable(false); _1x3.setForeground(Color.red); } 
+		else if(x == 1 && y == 4){_1x4.setText(String.valueOf(vals[3][0])); _1x4.setEditable(false); _1x4.setForeground(Color.red); } 
+		else if(x == 1 && y == 5){_1x5.setText(String.valueOf(vals[4][0])); _1x5.setEditable(false); _1x5.setForeground(Color.red); } 
+		else if(x == 1 && y == 6){_1x6.setText(String.valueOf(vals[5][0])); _1x6.setEditable(false); _1x6.setForeground(Color.red); } 
+		else if(x == 1 && y == 7){_1x7.setText(String.valueOf(vals[6][0])); _1x7.setEditable(false); _1x7.setForeground(Color.red); } 
+		else if(x == 1 && y == 8){_1x8.setText(String.valueOf(vals[7][0])); _1x8.setEditable(false); _1x8.setForeground(Color.red); } 
+		else if(x == 1 && y == 9){_1x9.setText(String.valueOf(vals[8][0])); _1x9.setEditable(false); _1x9.setForeground(Color.red); } 
+		else if(x == 2 && y == 1){_2x1.setText(String.valueOf(vals[0][1])); _2x1.setEditable(false); _2x1.setForeground(Color.red); } 
+		else if(x == 2 && y == 2){_2x2.setText(String.valueOf(vals[1][1])); _2x2.setEditable(false); _2x2.setForeground(Color.red); } 
+		else if(x == 2 && y == 3){_2x3.setText(String.valueOf(vals[2][1])); _2x3.setEditable(false); _2x3.setForeground(Color.red); } 
+		else if(x == 2 && y == 4){_2x4.setText(String.valueOf(vals[3][1])); _2x4.setEditable(false); _2x4.setForeground(Color.red); } 
+		else if(x == 2 && y == 5){_2x5.setText(String.valueOf(vals[4][1])); _2x5.setEditable(false); _2x5.setForeground(Color.red); } 
+		else if(x == 2 && y == 6){_2x6.setText(String.valueOf(vals[5][1])); _2x6.setEditable(false); _2x6.setForeground(Color.red); } 
+		else if(x == 2 && y == 7){_2x7.setText(String.valueOf(vals[6][1])); _2x7.setEditable(false); _2x7.setForeground(Color.red); } 
+		else if(x == 2 && y == 8){_2x8.setText(String.valueOf(vals[7][1])); _2x8.setEditable(false); _2x8.setForeground(Color.red); } 
+		else if(x == 2 && y == 9){_2x9.setText(String.valueOf(vals[8][1])); _2x9.setEditable(false); _2x9.setForeground(Color.red); } 
+		else if(x == 3 && y == 1){_3x1.setText(String.valueOf(vals[0][2])); _3x1.setEditable(false); _3x1.setForeground(Color.red); } 
+		else if(x == 3 && y == 2){_3x2.setText(String.valueOf(vals[1][2])); _3x2.setEditable(false); _3x2.setForeground(Color.red); } 
+		else if(x == 3 && y == 3){_3x3.setText(String.valueOf(vals[2][2])); _3x3.setEditable(false); _3x3.setForeground(Color.red); } 
+		else if(x == 3 && y == 4){_3x4.setText(String.valueOf(vals[3][2])); _3x4.setEditable(false); _3x4.setForeground(Color.red); } 
+		else if(x == 3 && y == 5){_3x5.setText(String.valueOf(vals[4][2])); _3x5.setEditable(false); _3x5.setForeground(Color.red); } 
+		else if(x == 3 && y == 6){_3x6.setText(String.valueOf(vals[5][2])); _3x6.setEditable(false); _3x6.setForeground(Color.red); } 
+		else if(x == 3 && y == 7){_3x7.setText(String.valueOf(vals[6][2])); _3x7.setEditable(false); _3x7.setForeground(Color.red); } 
+		else if(x == 3 && y == 8){_3x8.setText(String.valueOf(vals[7][2])); _3x8.setEditable(false); _3x8.setForeground(Color.red); } 
+		else if(x == 3 && y == 9){_3x9.setText(String.valueOf(vals[8][2])); _3x9.setEditable(false); _3x9.setForeground(Color.red); } 
+		else if(x == 4 && y == 1){_4x1.setText(String.valueOf(vals[0][3])); _4x1.setEditable(false); _4x1.setForeground(Color.red); } 
+		else if(x == 4 && y == 2){_4x2.setText(String.valueOf(vals[1][3])); _4x2.setEditable(false); _4x2.setForeground(Color.red); } 
+		else if(x == 4 && y == 3){_4x3.setText(String.valueOf(vals[2][3])); _4x3.setEditable(false); _4x3.setForeground(Color.red); } 
+		else if(x == 4 && y == 4){_4x4.setText(String.valueOf(vals[3][3])); _4x4.setEditable(false); _4x4.setForeground(Color.red); } 
+		else if(x == 4 && y == 5){_4x5.setText(String.valueOf(vals[4][3])); _4x5.setEditable(false); _4x5.setForeground(Color.red); } 
+		else if(x == 4 && y == 6){_4x6.setText(String.valueOf(vals[5][3])); _4x6.setEditable(false); _4x6.setForeground(Color.red); } 
+		else if(x == 4 && y == 7){_4x7.setText(String.valueOf(vals[6][3])); _4x7.setEditable(false); _4x7.setForeground(Color.red); } 
+		else if(x == 4 && y == 8){_4x8.setText(String.valueOf(vals[7][3])); _4x8.setEditable(false); _4x8.setForeground(Color.red); } 
+		else if(x == 4 && y == 9){_4x9.setText(String.valueOf(vals[8][3])); _4x9.setEditable(false); _4x9.setForeground(Color.red); } 
+		else if(x == 5 && y == 1){_5x1.setText(String.valueOf(vals[0][4])); _5x1.setEditable(false); _5x1.setForeground(Color.red); } 
+		else if(x == 5 && y == 2){_5x2.setText(String.valueOf(vals[1][4])); _5x2.setEditable(false); _5x2.setForeground(Color.red); } 
+		else if(x == 5 && y == 3){_5x3.setText(String.valueOf(vals[2][4])); _5x3.setEditable(false); _5x3.setForeground(Color.red); } 
+		else if(x == 5 && y == 4){_5x4.setText(String.valueOf(vals[3][4])); _5x4.setEditable(false); _5x4.setForeground(Color.red); } 
+		else if(x == 5 && y == 5){_5x5.setText(String.valueOf(vals[4][4])); _5x5.setEditable(false); _5x5.setForeground(Color.red); } 
+		else if(x == 5 && y == 6){_5x6.setText(String.valueOf(vals[5][4])); _5x6.setEditable(false); _5x6.setForeground(Color.red); } 
+		else if(x == 5 && y == 7){_5x7.setText(String.valueOf(vals[6][4])); _5x7.setEditable(false); _5x7.setForeground(Color.red); } 
+		else if(x == 5 && y == 8){_5x8.setText(String.valueOf(vals[7][4])); _5x8.setEditable(false); _5x8.setForeground(Color.red); } 
+		else if(x == 5 && y == 9){_5x9.setText(String.valueOf(vals[8][4])); _5x9.setEditable(false); _5x9.setForeground(Color.red); } 
+		else if(x == 6 && y == 1){_6x1.setText(String.valueOf(vals[0][5])); _6x1.setEditable(false); _6x1.setForeground(Color.red); } 
+		else if(x == 6 && y == 2){_6x2.setText(String.valueOf(vals[1][5])); _6x2.setEditable(false); _6x2.setForeground(Color.red); } 
+		else if(x == 6 && y == 3){_6x3.setText(String.valueOf(vals[2][5])); _6x3.setEditable(false); _6x3.setForeground(Color.red); } 
+		else if(x == 6 && y == 4){_6x4.setText(String.valueOf(vals[3][5])); _6x4.setEditable(false); _6x4.setForeground(Color.red); } 
+		else if(x == 6 && y == 5){_6x5.setText(String.valueOf(vals[4][5])); _6x5.setEditable(false); _6x5.setForeground(Color.red); } 
+		else if(x == 6 && y == 6){_6x6.setText(String.valueOf(vals[5][5])); _6x6.setEditable(false); _6x6.setForeground(Color.red); } 
+		else if(x == 6 && y == 7){_6x7.setText(String.valueOf(vals[6][5])); _6x7.setEditable(false); _6x7.setForeground(Color.red); } 
+		else if(x == 6 && y == 8){_6x8.setText(String.valueOf(vals[7][5])); _6x8.setEditable(false); _6x8.setForeground(Color.red); } 
+		else if(x == 6 && y == 9){_6x9.setText(String.valueOf(vals[8][5])); _6x9.setEditable(false); _6x9.setForeground(Color.red); } 
+		else if(x == 7 && y == 1){_7x1.setText(String.valueOf(vals[0][6])); _7x1.setEditable(false); _7x1.setForeground(Color.red); } 
+		else if(x == 7 && y == 2){_7x2.setText(String.valueOf(vals[1][6])); _7x2.setEditable(false); _7x2.setForeground(Color.red); } 
+		else if(x == 7 && y == 3){_7x3.setText(String.valueOf(vals[2][6])); _7x3.setEditable(false); _7x3.setForeground(Color.red); } 
+		else if(x == 7 && y == 4){_7x4.setText(String.valueOf(vals[3][6])); _7x4.setEditable(false); _7x4.setForeground(Color.red); } 
+		else if(x == 7 && y == 5){_7x5.setText(String.valueOf(vals[4][6])); _7x5.setEditable(false); _7x5.setForeground(Color.red); } 
+		else if(x == 7 && y == 6){_7x6.setText(String.valueOf(vals[5][6])); _7x6.setEditable(false); _7x6.setForeground(Color.red); } 
+		else if(x == 7 && y == 7){_7x7.setText(String.valueOf(vals[6][6])); _7x7.setEditable(false); _7x7.setForeground(Color.red); } 
+		else if(x == 7 && y == 8){_7x8.setText(String.valueOf(vals[7][6])); _7x8.setEditable(false); _7x8.setForeground(Color.red); } 
+		else if(x == 7 && y == 9){_7x9.setText(String.valueOf(vals[8][6])); _7x9.setEditable(false); _7x9.setForeground(Color.red); } 
+		else if(x == 8 && y == 1){_8x1.setText(String.valueOf(vals[0][7])); _8x1.setEditable(false); _8x1.setForeground(Color.red); } 
+		else if(x == 8 && y == 2){_8x2.setText(String.valueOf(vals[1][7])); _8x2.setEditable(false); _8x2.setForeground(Color.red); } 
+		else if(x == 8 && y == 3){_8x3.setText(String.valueOf(vals[2][7])); _8x3.setEditable(false); _8x3.setForeground(Color.red); } 
+		else if(x == 8 && y == 4){_8x4.setText(String.valueOf(vals[3][7])); _8x4.setEditable(false); _8x4.setForeground(Color.red); } 
+		else if(x == 8 && y == 5){_8x5.setText(String.valueOf(vals[4][7])); _8x5.setEditable(false); _8x5.setForeground(Color.red); } 
+		else if(x == 8 && y == 6){_8x6.setText(String.valueOf(vals[5][7])); _8x6.setEditable(false); _8x6.setForeground(Color.red); } 
+		else if(x == 8 && y == 7){_8x7.setText(String.valueOf(vals[6][7])); _8x7.setEditable(false); _8x7.setForeground(Color.red); } 
+		else if(x == 8 && y == 8){_8x8.setText(String.valueOf(vals[7][7])); _8x8.setEditable(false); _8x8.setForeground(Color.red); } 
+		else if(x == 8 && y == 9){_8x9.setText(String.valueOf(vals[8][7])); _8x9.setEditable(false); _8x9.setForeground(Color.red); } 
+		else if(x == 9 && y == 1){_9x1.setText(String.valueOf(vals[0][8])); _9x1.setEditable(false); _9x1.setForeground(Color.red); } 
+		else if(x == 9 && y == 2){_9x2.setText(String.valueOf(vals[1][8])); _9x2.setEditable(false); _9x2.setForeground(Color.red); } 
+		else if(x == 9 && y == 3){_9x3.setText(String.valueOf(vals[2][8])); _9x3.setEditable(false); _9x3.setForeground(Color.red); } 
+		else if(x == 9 && y == 4){_9x4.setText(String.valueOf(vals[3][8])); _9x4.setEditable(false); _9x4.setForeground(Color.red); } 
+		else if(x == 9 && y == 5){_9x5.setText(String.valueOf(vals[4][8])); _9x5.setEditable(false); _9x5.setForeground(Color.red); } 
+		else if(x == 9 && y == 6){_9x6.setText(String.valueOf(vals[5][8])); _9x6.setEditable(false); _9x6.setForeground(Color.red); } 
+		else if(x == 9 && y == 7){_9x7.setText(String.valueOf(vals[6][8])); _9x7.setEditable(false); _9x7.setForeground(Color.red); } 
+		else if(x == 9 && y == 8){_9x8.setText(String.valueOf(vals[7][8])); _9x8.setEditable(false); _9x8.setForeground(Color.red); } 
+		else if(x == 9 && y == 9){_9x9.setText(String.valueOf(vals[8][8])); _9x9.setEditable(false); _9x9.setForeground(Color.red); } 
 		
 	}
 	
@@ -749,6 +750,7 @@ public class Board extends javax.swing.JFrame {
 				}
 			}
 		}
+		
 		setValBoard(9, 9);
 	}
 	

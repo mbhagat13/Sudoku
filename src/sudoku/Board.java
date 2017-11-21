@@ -29,6 +29,8 @@ public class Board extends javax.swing.JFrame {
 		checks[0] = new CheckBox();
 		checks[1] = new CheckHorizontal();
 		checks[2] = new CheckVertical();
+		
+		genNewBoard();
 	}
 
 	/**
@@ -431,19 +433,7 @@ public class Board extends javax.swing.JFrame {
         }// </editor-fold>//GEN-END:initComponents
 
 	
-	private void deleteme()
-	{
-		userVals = new int[][]{{2,9,5,7,4,3,8,6,1},
-				       {4,3,1,8,6,5,9,2,7},
-				       {8,7,6,1,9,2,5,4,3},
-				       {3,8,7,4,5,9,2,1,6},
-				       {6,1,2,3,8,7,4,9,5},
-				       {5,4,9,2,1,6,7,3,8},
-				       {7,6,3,5,2,4,1,8,9},
-				       {9,2,8,6,7,1,3,5,4},
-				       {1,5,4,9,3,8,6,7,2}};
-	}
-	
+
 	
 	private void resetAll()
 	{
@@ -528,6 +518,9 @@ public class Board extends javax.swing.JFrame {
 		_9x7.setText(" "); _9x7.setEditable(true);
 		_9x8.setText(" "); _9x8.setEditable(true);
 		_9x9.setText(" "); _9x9.setEditable(true);
+		
+		userVals = new int[9][9];
+		vals = new int[9][9];
 	}
 	
 	
@@ -535,87 +528,87 @@ public class Board extends javax.swing.JFrame {
 	private boolean readValsIn()
 	{
 		try{
-		userVals[0][0] = Integer.parseInt(_1x1.getText());
-		userVals[1][0] = Integer.parseInt(_1x2.getText());
-		userVals[2][0] = Integer.parseInt(_1x3.getText());
-		userVals[3][0] = Integer.parseInt(_1x4.getText());
-		userVals[4][0] = Integer.parseInt(_1x5.getText());
-		userVals[5][0] = Integer.parseInt(_1x6.getText());
-		userVals[6][0] = Integer.parseInt(_1x7.getText());
-		userVals[7][0] = Integer.parseInt(_1x8.getText());
-		userVals[8][0] = Integer.parseInt(_1x9.getText());
-		userVals[0][1] = Integer.parseInt(_2x1.getText());
-		userVals[1][1] = Integer.parseInt(_2x2.getText());
-		userVals[2][1] = Integer.parseInt(_2x3.getText());
-		userVals[3][1] = Integer.parseInt(_2x4.getText());
-		userVals[4][1] = Integer.parseInt(_2x5.getText());
-		userVals[5][1] = Integer.parseInt(_2x6.getText());
-		userVals[6][1] = Integer.parseInt(_2x7.getText());
-		userVals[7][1] = Integer.parseInt(_2x8.getText());
-		userVals[8][1] = Integer.parseInt(_2x9.getText());
-		userVals[0][2] = Integer.parseInt(_3x1.getText());
-		userVals[1][2] = Integer.parseInt(_3x2.getText());
-		userVals[2][2] = Integer.parseInt(_3x3.getText());
-		userVals[3][2] = Integer.parseInt(_3x4.getText());
-		userVals[4][2] = Integer.parseInt(_3x5.getText());
-		userVals[5][2] = Integer.parseInt(_3x6.getText());
-		userVals[6][2] = Integer.parseInt(_3x7.getText());
-		userVals[7][2] = Integer.parseInt(_3x8.getText());
-		userVals[8][2] = Integer.parseInt(_3x9.getText());
-		userVals[0][3] = Integer.parseInt(_4x1.getText());
-		userVals[1][3] = Integer.parseInt(_4x2.getText());
-		userVals[2][3] = Integer.parseInt(_4x3.getText());
-		userVals[3][3] = Integer.parseInt(_4x4.getText());
-		userVals[4][3] = Integer.parseInt(_4x5.getText());
-		userVals[5][3] = Integer.parseInt(_4x6.getText());
-		userVals[6][3] = Integer.parseInt(_4x7.getText());
-		userVals[7][3] = Integer.parseInt(_4x8.getText());
-		userVals[8][3] = Integer.parseInt(_4x9.getText());
-		userVals[0][4] = Integer.parseInt(_5x1.getText());
-		userVals[1][4] = Integer.parseInt(_5x2.getText());
-		userVals[2][4] = Integer.parseInt(_5x3.getText());
-		userVals[3][4] = Integer.parseInt(_5x4.getText());
-		userVals[4][4] = Integer.parseInt(_5x5.getText());
-		userVals[5][4] = Integer.parseInt(_5x6.getText());
-		userVals[6][4] = Integer.parseInt(_5x7.getText());
-		userVals[7][4] = Integer.parseInt(_5x8.getText());
-		userVals[8][4] = Integer.parseInt(_5x9.getText());
-		userVals[0][5] = Integer.parseInt(_6x1.getText());
-		userVals[1][5] = Integer.parseInt(_6x2.getText());
-		userVals[2][5] = Integer.parseInt(_6x3.getText());
-		userVals[3][5] = Integer.parseInt(_6x4.getText());
-		userVals[4][5] = Integer.parseInt(_6x5.getText());
-		userVals[5][5] = Integer.parseInt(_6x6.getText());
-		userVals[6][5] = Integer.parseInt(_6x7.getText());
-		userVals[7][5] = Integer.parseInt(_6x8.getText());
-		userVals[8][5] = Integer.parseInt(_6x9.getText());
-		userVals[0][6] = Integer.parseInt(_7x1.getText());
-		userVals[1][6] = Integer.parseInt(_7x2.getText());
-		userVals[2][6] = Integer.parseInt(_7x3.getText());
-		userVals[3][6] = Integer.parseInt(_7x4.getText());
-		userVals[4][6] = Integer.parseInt(_7x5.getText());
-		userVals[5][6] = Integer.parseInt(_7x6.getText());
-		userVals[6][6] = Integer.parseInt(_7x7.getText());
-		userVals[7][6] = Integer.parseInt(_7x8.getText());
-		userVals[8][6] = Integer.parseInt(_7x9.getText());
-		userVals[0][7] = Integer.parseInt(_8x1.getText());
-		userVals[1][7] = Integer.parseInt(_8x2.getText());
-		userVals[2][7] = Integer.parseInt(_8x3.getText());
-		userVals[3][7] = Integer.parseInt(_8x4.getText());
-		userVals[4][7] = Integer.parseInt(_8x5.getText());
-		userVals[5][7] = Integer.parseInt(_8x6.getText());
-		userVals[6][7] = Integer.parseInt(_8x7.getText());
-		userVals[7][7] = Integer.parseInt(_8x8.getText());
-		userVals[8][7] = Integer.parseInt(_8x9.getText());
-		userVals[0][8] = Integer.parseInt(_9x1.getText());
-		userVals[1][8] = Integer.parseInt(_9x2.getText());
-		userVals[2][8] = Integer.parseInt(_9x3.getText());
-		userVals[3][8] = Integer.parseInt(_9x4.getText());
-		userVals[4][8] = Integer.parseInt(_9x5.getText());
-		userVals[5][8] = Integer.parseInt(_9x6.getText());
-		userVals[6][8] = Integer.parseInt(_9x7.getText());
-		userVals[7][8] = Integer.parseInt(_9x8.getText());
-		userVals[8][8] = Integer.parseInt(_9x9.getText());
+		userVals[0][0] = Integer.parseInt(_1x1.getText().replaceAll("\\s+",""));
+		userVals[1][0] = Integer.parseInt(_1x2.getText().replaceAll("\\s+",""));
+		userVals[2][0] = Integer.parseInt(_1x3.getText().replaceAll("\\s+",""));
+		userVals[3][0] = Integer.parseInt(_1x4.getText().replaceAll("\\s+",""));
+		userVals[4][0] = Integer.parseInt(_1x5.getText().replaceAll("\\s+",""));
+		userVals[5][0] = Integer.parseInt(_1x6.getText().replaceAll("\\s+",""));
+		userVals[6][0] = Integer.parseInt(_1x7.getText().replaceAll("\\s+",""));
+		userVals[7][0] = Integer.parseInt(_1x8.getText().replaceAll("\\s+",""));
+		userVals[8][0] = Integer.parseInt(_1x9.getText().replaceAll("\\s+",""));
+		userVals[0][1] = Integer.parseInt(_2x1.getText().replaceAll("\\s+",""));
+		userVals[1][1] = Integer.parseInt(_2x2.getText().replaceAll("\\s+",""));
+		userVals[2][1] = Integer.parseInt(_2x3.getText().replaceAll("\\s+",""));
+		userVals[3][1] = Integer.parseInt(_2x4.getText().replaceAll("\\s+",""));
+		userVals[4][1] = Integer.parseInt(_2x5.getText().replaceAll("\\s+",""));
+		userVals[5][1] = Integer.parseInt(_2x6.getText().replaceAll("\\s+",""));
+		userVals[6][1] = Integer.parseInt(_2x7.getText().replaceAll("\\s+",""));
+		userVals[7][1] = Integer.parseInt(_2x8.getText().replaceAll("\\s+",""));
+		userVals[8][1] = Integer.parseInt(_2x9.getText().replaceAll("\\s+",""));
+		userVals[0][2] = Integer.parseInt(_3x1.getText().replaceAll("\\s+",""));
+		userVals[1][2] = Integer.parseInt(_3x2.getText().replaceAll("\\s+",""));
+		userVals[2][2] = Integer.parseInt(_3x3.getText().replaceAll("\\s+",""));
+		userVals[3][2] = Integer.parseInt(_3x4.getText().replaceAll("\\s+",""));
+		userVals[4][2] = Integer.parseInt(_3x5.getText().replaceAll("\\s+",""));
+		userVals[5][2] = Integer.parseInt(_3x6.getText().replaceAll("\\s+",""));
+		userVals[6][2] = Integer.parseInt(_3x7.getText().replaceAll("\\s+",""));
+		userVals[7][2] = Integer.parseInt(_3x8.getText().replaceAll("\\s+",""));
+		userVals[8][2] = Integer.parseInt(_3x9.getText().replaceAll("\\s+",""));
+		userVals[0][3] = Integer.parseInt(_4x1.getText().replaceAll("\\s+",""));
+		userVals[1][3] = Integer.parseInt(_4x2.getText().replaceAll("\\s+",""));
+		userVals[2][3] = Integer.parseInt(_4x3.getText().replaceAll("\\s+",""));
+		userVals[3][3] = Integer.parseInt(_4x4.getText().replaceAll("\\s+",""));
+		userVals[4][3] = Integer.parseInt(_4x5.getText().replaceAll("\\s+",""));
+		userVals[5][3] = Integer.parseInt(_4x6.getText().replaceAll("\\s+",""));
+		userVals[6][3] = Integer.parseInt(_4x7.getText().replaceAll("\\s+",""));
+		userVals[7][3] = Integer.parseInt(_4x8.getText().replaceAll("\\s+",""));
+		userVals[8][3] = Integer.parseInt(_4x9.getText().replaceAll("\\s+",""));
+		userVals[0][4] = Integer.parseInt(_5x1.getText().replaceAll("\\s+",""));
+		userVals[1][4] = Integer.parseInt(_5x2.getText().replaceAll("\\s+",""));
+		userVals[2][4] = Integer.parseInt(_5x3.getText().replaceAll("\\s+",""));
+		userVals[3][4] = Integer.parseInt(_5x4.getText().replaceAll("\\s+",""));
+		userVals[4][4] = Integer.parseInt(_5x5.getText().replaceAll("\\s+",""));
+		userVals[5][4] = Integer.parseInt(_5x6.getText().replaceAll("\\s+",""));
+		userVals[6][4] = Integer.parseInt(_5x7.getText().replaceAll("\\s+",""));
+		userVals[7][4] = Integer.parseInt(_5x8.getText().replaceAll("\\s+",""));
+		userVals[8][4] = Integer.parseInt(_5x9.getText().replaceAll("\\s+",""));
+		userVals[0][5] = Integer.parseInt(_6x1.getText().replaceAll("\\s+",""));
+		userVals[1][5] = Integer.parseInt(_6x2.getText().replaceAll("\\s+",""));
+		userVals[2][5] = Integer.parseInt(_6x3.getText().replaceAll("\\s+",""));
+		userVals[3][5] = Integer.parseInt(_6x4.getText().replaceAll("\\s+",""));
+		userVals[4][5] = Integer.parseInt(_6x5.getText().replaceAll("\\s+",""));
+		userVals[5][5] = Integer.parseInt(_6x6.getText().replaceAll("\\s+",""));
+		userVals[6][5] = Integer.parseInt(_6x7.getText().replaceAll("\\s+",""));
+		userVals[7][5] = Integer.parseInt(_6x8.getText().replaceAll("\\s+",""));
+		userVals[8][5] = Integer.parseInt(_6x9.getText().replaceAll("\\s+",""));
+		userVals[0][6] = Integer.parseInt(_7x1.getText().replaceAll("\\s+",""));
+		userVals[1][6] = Integer.parseInt(_7x2.getText().replaceAll("\\s+",""));
+		userVals[2][6] = Integer.parseInt(_7x3.getText().replaceAll("\\s+",""));
+		userVals[3][6] = Integer.parseInt(_7x4.getText().replaceAll("\\s+",""));
+		userVals[4][6] = Integer.parseInt(_7x5.getText().replaceAll("\\s+",""));
+		userVals[5][6] = Integer.parseInt(_7x6.getText().replaceAll("\\s+",""));
+		userVals[6][6] = Integer.parseInt(_7x7.getText().replaceAll("\\s+",""));
+		userVals[7][6] = Integer.parseInt(_7x8.getText().replaceAll("\\s+",""));
+		userVals[8][6] = Integer.parseInt(_7x9.getText().replaceAll("\\s+",""));
+		userVals[0][7] = Integer.parseInt(_8x1.getText().replaceAll("\\s+",""));
+		userVals[1][7] = Integer.parseInt(_8x2.getText().replaceAll("\\s+",""));
+		userVals[2][7] = Integer.parseInt(_8x3.getText().replaceAll("\\s+",""));
+		userVals[3][7] = Integer.parseInt(_8x4.getText().replaceAll("\\s+",""));
+		userVals[4][7] = Integer.parseInt(_8x5.getText().replaceAll("\\s+",""));
+		userVals[5][7] = Integer.parseInt(_8x6.getText().replaceAll("\\s+",""));
+		userVals[6][7] = Integer.parseInt(_8x7.getText().replaceAll("\\s+",""));
+		userVals[7][7] = Integer.parseInt(_8x8.getText().replaceAll("\\s+",""));
+		userVals[8][7] = Integer.parseInt(_8x9.getText().replaceAll("\\s+",""));
+		userVals[0][8] = Integer.parseInt(_9x1.getText().replaceAll("\\s+",""));
+		userVals[1][8] = Integer.parseInt(_9x2.getText().replaceAll("\\s+",""));
+		userVals[2][8] = Integer.parseInt(_9x3.getText().replaceAll("\\s+",""));
+		userVals[3][8] = Integer.parseInt(_9x4.getText().replaceAll("\\s+",""));
+		userVals[4][8] = Integer.parseInt(_9x5.getText().replaceAll("\\s+",""));
+		userVals[5][8] = Integer.parseInt(_9x6.getText().replaceAll("\\s+",""));
+		userVals[6][8] = Integer.parseInt(_9x7.getText().replaceAll("\\s+",""));
+		userVals[7][8] = Integer.parseInt(_9x8.getText().replaceAll("\\s+",""));
+		userVals[8][8] = Integer.parseInt(_9x9.getText().replaceAll("\\s+",""));
 	}
 	catch(Exception ex)
 	{
@@ -719,23 +712,42 @@ public class Board extends javax.swing.JFrame {
 		return out;
 	}
 	
+	private void genNewBoard()
+	{
+		resetAll();
+		try
+		{
+			vals = PuzzleGenerator.generate();
+		}
+		catch(Exception ex)
+		{
+			
+		}
+		
+		//chose shown coords
+		
+	}
+	
 	
         private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-		deleteme();
-		System.out.print(preformChecks());
+
 		if(readValsIn())
 		{
 			//board is filled out
-			System.out.print(preformChecks());
+			if(preformChecks())
+				System.out.println("YOU WIN!!!");
+			else
+				System.out.println("NOT CORRECT!");
 		}
 		else
 		{
 			//board not filled return error
+			System.out.println("BOARD IS NOT FINNISHED!");
 		}
         }//GEN-LAST:event_jButton1ActionPerformed
 
         private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-                // new board
+		genNewBoard();
         }//GEN-LAST:event_jButton2ActionPerformed
 
 	/**

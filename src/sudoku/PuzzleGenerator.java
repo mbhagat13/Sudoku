@@ -15,17 +15,13 @@ import java.util.Random;
  */
 public class PuzzleGenerator {
     
-    public PuzzleGenerator() {
-        
-    }
-    
     public static int[][] generate() throws FileNotFoundException, IOException {
         FileReader fr = new FileReader("puzzles.txt");
         BufferedReader br = new BufferedReader(fr);
         ArrayList<String> puzzles = new ArrayList<String>();
         String puzzle;
         Random rand = new Random();
-        int p_index = rand.nextInt(6) + 1; // integer from 1 to 6 (number of puzzles ready)
+        int p_index = rand.nextInt(5); // integer from 0 to 5 (number of puzzles ready)
         int[][] output = new int[9][9];
         int i, j;
         char c;

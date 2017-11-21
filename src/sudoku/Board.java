@@ -5,6 +5,8 @@
  */
 package sudoku;
 
+import java.util.Random;
+
 /**
  *
  * @author raymondbaker
@@ -160,158 +162,162 @@ public class Board extends javax.swing.JFrame {
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_2x1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_3x1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(59, 59, 59)
+                                                                .addComponent(_3x1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(_1x2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_2x2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_3x2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(_1x3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_2x3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_3x3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(_1x4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_2x4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_3x4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(_1x5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_2x5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_3x5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(_1x6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_2x6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_3x6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(_1x7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_2x7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_3x7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(_1x8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_2x8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_3x8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(_1x9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_2x9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_3x9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(layout.createSequentialGroup()
                                                                 .addComponent(_4x1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_5x1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_6x1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(67, 67, 67)
+                                                                .addComponent(_6x1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(_4x2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_5x2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_6x2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(_4x3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_5x3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_6x3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(_4x4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_5x4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_6x4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(_4x5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_5x5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_6x5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(_4x6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_5x6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_6x6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(_4x7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_5x7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_6x7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(_4x8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_5x8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_6x8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(_4x9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_5x9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addComponent(_6x9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addGap(20, 20, 20)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(layout.createSequentialGroup()
                                                                 .addComponent(_7x1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_8x1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_9x1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                         .addGroup(layout.createSequentialGroup()
-                                                                .addComponent(_1x2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_2x2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_3x2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(59, 59, 59)
-                                                                .addComponent(_4x2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_5x2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_6x2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(67, 67, 67)
                                                                 .addComponent(_7x2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_8x2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_9x2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                         .addGroup(layout.createSequentialGroup()
-                                                                .addComponent(_1x3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_2x3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_3x3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(59, 59, 59)
-                                                                .addComponent(_4x3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_5x3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_6x3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(67, 67, 67)
                                                                 .addComponent(_7x3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_8x3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_9x3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                         .addGroup(layout.createSequentialGroup()
-                                                                .addComponent(_1x4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_2x4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_3x4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(59, 59, 59)
-                                                                .addComponent(_4x4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_5x4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_6x4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(67, 67, 67)
                                                                 .addComponent(_7x4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_8x4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_9x4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                         .addGroup(layout.createSequentialGroup()
-                                                                .addComponent(_1x5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_2x5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_3x5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(59, 59, 59)
-                                                                .addComponent(_4x5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_5x5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_6x5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(67, 67, 67)
                                                                 .addComponent(_7x5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_8x5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_9x5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                         .addGroup(layout.createSequentialGroup()
-                                                                .addComponent(_1x6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_2x6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_3x6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(59, 59, 59)
-                                                                .addComponent(_4x6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_5x6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_6x6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(67, 67, 67)
                                                                 .addComponent(_7x6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_8x6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_9x6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                         .addGroup(layout.createSequentialGroup()
-                                                                .addComponent(_1x7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_2x7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_3x7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(59, 59, 59)
-                                                                .addComponent(_4x7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_5x7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_6x7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(67, 67, 67)
                                                                 .addComponent(_7x7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_8x7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_9x7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                         .addGroup(layout.createSequentialGroup()
-                                                                .addComponent(_1x8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_2x8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_3x8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(59, 59, 59)
-                                                                .addComponent(_4x8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_5x8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_6x8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(67, 67, 67)
                                                                 .addComponent(_7x8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_8x8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_9x8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                         .addGroup(layout.createSequentialGroup()
-                                                                .addComponent(_1x9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_2x9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_3x9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(59, 59, 59)
-                                                                .addComponent(_4x9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_5x9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(_6x9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(67, 67, 67)
                                                                 .addComponent(_7x9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(_8x9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -620,86 +626,86 @@ public class Board extends javax.swing.JFrame {
 	public void setValBoard(int x, int y)
 	{
 		if(x == 1 && y == 1){_1x1.setText(String.valueOf(vals[0][0])); _1x1.setEditable(false);} 
-		if(x == 1 && y == 2){_1x2.setText(String.valueOf(vals[1][0])); _1x2.setEditable(false);} 
-		if(x == 1 && y == 3){_1x3.setText(String.valueOf(vals[2][0])); _1x3.setEditable(false);} 
-		if(x == 1 && y == 4){_1x4.setText(String.valueOf(vals[3][0])); _1x4.setEditable(false);} 
-		if(x == 1 && y == 5){_1x5.setText(String.valueOf(vals[4][0])); _1x5.setEditable(false);} 
-		if(x == 1 && y == 6){_1x6.setText(String.valueOf(vals[5][0])); _1x6.setEditable(false);} 
-		if(x == 1 && y == 7){_1x7.setText(String.valueOf(vals[6][0])); _1x7.setEditable(false);} 
-		if(x == 1 && y == 8){_1x8.setText(String.valueOf(vals[7][0])); _1x8.setEditable(false);} 
-		if(x == 1 && y == 9){_1x9.setText(String.valueOf(vals[8][0])); _1x9.setEditable(false);} 
-		if(x == 2 && y == 1){_2x1.setText(String.valueOf(vals[0][1])); _2x1.setEditable(false);} 
-		if(x == 2 && y == 2){_2x2.setText(String.valueOf(vals[1][1])); _2x2.setEditable(false);} 
-		if(x == 2 && y == 3){_2x3.setText(String.valueOf(vals[2][1])); _2x3.setEditable(false);} 
-		if(x == 2 && y == 4){_2x4.setText(String.valueOf(vals[3][1])); _2x4.setEditable(false);} 
-		if(x == 2 && y == 5){_2x5.setText(String.valueOf(vals[4][1])); _2x5.setEditable(false);} 
-		if(x == 2 && y == 6){_2x6.setText(String.valueOf(vals[5][1])); _2x6.setEditable(false);} 
-		if(x == 2 && y == 7){_2x7.setText(String.valueOf(vals[6][1])); _2x7.setEditable(false);} 
-		if(x == 2 && y == 8){_2x8.setText(String.valueOf(vals[7][1])); _2x8.setEditable(false);} 
-		if(x == 2 && y == 9){_2x9.setText(String.valueOf(vals[8][1])); _2x9.setEditable(false);} 
-		if(x == 3 && y == 1){_3x1.setText(String.valueOf(vals[0][2])); _3x1.setEditable(false);} 
-		if(x == 3 && y == 2){_3x2.setText(String.valueOf(vals[1][2])); _3x2.setEditable(false);} 
-		if(x == 3 && y == 3){_3x3.setText(String.valueOf(vals[2][2])); _3x3.setEditable(false);} 
-		if(x == 3 && y == 4){_3x4.setText(String.valueOf(vals[3][2])); _3x4.setEditable(false);} 
-		if(x == 3 && y == 5){_3x5.setText(String.valueOf(vals[4][2])); _3x5.setEditable(false);} 
-		if(x == 3 && y == 6){_3x6.setText(String.valueOf(vals[5][2])); _3x6.setEditable(false);} 
-		if(x == 3 && y == 7){_3x7.setText(String.valueOf(vals[6][2])); _3x7.setEditable(false);} 
-		if(x == 3 && y == 8){_3x8.setText(String.valueOf(vals[7][2])); _3x8.setEditable(false);} 
-		if(x == 3 && y == 9){_3x9.setText(String.valueOf(vals[8][2])); _3x9.setEditable(false);} 
-		if(x == 4 && y == 1){_4x1.setText(String.valueOf(vals[0][3])); _4x1.setEditable(false);} 
-		if(x == 4 && y == 2){_4x2.setText(String.valueOf(vals[1][3])); _4x2.setEditable(false);} 
-		if(x == 4 && y == 3){_4x3.setText(String.valueOf(vals[2][3])); _4x3.setEditable(false);} 
-		if(x == 4 && y == 4){_4x4.setText(String.valueOf(vals[3][3])); _4x4.setEditable(false);} 
-		if(x == 4 && y == 5){_4x5.setText(String.valueOf(vals[4][3])); _4x5.setEditable(false);} 
-		if(x == 4 && y == 6){_4x6.setText(String.valueOf(vals[5][3])); _4x6.setEditable(false);} 
-		if(x == 4 && y == 7){_4x7.setText(String.valueOf(vals[6][3])); _4x7.setEditable(false);} 
-		if(x == 4 && y == 8){_4x8.setText(String.valueOf(vals[7][3])); _4x8.setEditable(false);} 
-		if(x == 4 && y == 9){_4x9.setText(String.valueOf(vals[8][3])); _4x9.setEditable(false);} 
-		if(x == 5 && y == 1){_5x1.setText(String.valueOf(vals[0][4])); _5x1.setEditable(false);} 
-		if(x == 5 && y == 2){_5x2.setText(String.valueOf(vals[1][4])); _5x2.setEditable(false);} 
-		if(x == 5 && y == 3){_5x3.setText(String.valueOf(vals[2][4])); _5x3.setEditable(false);} 
-		if(x == 5 && y == 4){_5x4.setText(String.valueOf(vals[3][4])); _5x4.setEditable(false);} 
-		if(x == 5 && y == 5){_5x5.setText(String.valueOf(vals[4][4])); _5x5.setEditable(false);} 
-		if(x == 5 && y == 6){_5x6.setText(String.valueOf(vals[5][4])); _5x6.setEditable(false);} 
-		if(x == 5 && y == 7){_5x7.setText(String.valueOf(vals[6][4])); _5x7.setEditable(false);} 
-		if(x == 5 && y == 8){_5x8.setText(String.valueOf(vals[7][4])); _5x8.setEditable(false);} 
-		if(x == 5 && y == 9){_5x9.setText(String.valueOf(vals[8][4])); _5x9.setEditable(false);} 
-		if(x == 6 && y == 1){_6x1.setText(String.valueOf(vals[0][5])); _6x1.setEditable(false);} 
-		if(x == 6 && y == 2){_6x2.setText(String.valueOf(vals[1][5])); _6x2.setEditable(false);} 
-		if(x == 6 && y == 3){_6x3.setText(String.valueOf(vals[2][5])); _6x3.setEditable(false);} 
-		if(x == 6 && y == 4){_6x4.setText(String.valueOf(vals[3][5])); _6x4.setEditable(false);} 
-		if(x == 6 && y == 5){_6x5.setText(String.valueOf(vals[4][5])); _6x5.setEditable(false);} 
-		if(x == 6 && y == 6){_6x6.setText(String.valueOf(vals[5][5])); _6x6.setEditable(false);} 
-		if(x == 6 && y == 7){_6x7.setText(String.valueOf(vals[6][5])); _6x7.setEditable(false);} 
-		if(x == 6 && y == 8){_6x8.setText(String.valueOf(vals[7][5])); _6x8.setEditable(false);} 
-		if(x == 6 && y == 9){_6x9.setText(String.valueOf(vals[8][5])); _6x9.setEditable(false);} 
-		if(x == 7 && y == 1){_7x1.setText(String.valueOf(vals[0][6])); _7x1.setEditable(false);} 
-		if(x == 7 && y == 2){_7x2.setText(String.valueOf(vals[1][6])); _7x2.setEditable(false);} 
-		if(x == 7 && y == 3){_7x3.setText(String.valueOf(vals[2][6])); _7x3.setEditable(false);} 
-		if(x == 7 && y == 4){_7x4.setText(String.valueOf(vals[3][6])); _7x4.setEditable(false);} 
-		if(x == 7 && y == 5){_7x5.setText(String.valueOf(vals[4][6])); _7x5.setEditable(false);} 
-		if(x == 7 && y == 6){_7x6.setText(String.valueOf(vals[5][6])); _7x6.setEditable(false);} 
-		if(x == 7 && y == 7){_7x7.setText(String.valueOf(vals[6][6])); _7x7.setEditable(false);} 
-		if(x == 7 && y == 8){_7x8.setText(String.valueOf(vals[7][6])); _7x8.setEditable(false);} 
-		if(x == 7 && y == 9){_7x9.setText(String.valueOf(vals[8][6])); _7x9.setEditable(false);} 
-		if(x == 8 && y == 1){_8x1.setText(String.valueOf(vals[0][7])); _8x1.setEditable(false);} 
-		if(x == 8 && y == 2){_8x2.setText(String.valueOf(vals[1][7])); _8x2.setEditable(false);} 
-		if(x == 8 && y == 3){_8x3.setText(String.valueOf(vals[2][7])); _8x3.setEditable(false);} 
-		if(x == 8 && y == 4){_8x4.setText(String.valueOf(vals[3][7])); _8x4.setEditable(false);} 
-		if(x == 8 && y == 5){_8x5.setText(String.valueOf(vals[4][7])); _8x5.setEditable(false);} 
-		if(x == 8 && y == 6){_8x6.setText(String.valueOf(vals[5][7])); _8x6.setEditable(false);} 
-		if(x == 8 && y == 7){_8x7.setText(String.valueOf(vals[6][7])); _8x7.setEditable(false);} 
-		if(x == 8 && y == 8){_8x8.setText(String.valueOf(vals[7][7])); _8x8.setEditable(false);} 
-		if(x == 8 && y == 9){_8x9.setText(String.valueOf(vals[8][7])); _8x9.setEditable(false);} 
-		if(x == 9 && y == 1){_9x1.setText(String.valueOf(vals[0][8])); _9x1.setEditable(false);} 
-		if(x == 9 && y == 2){_9x2.setText(String.valueOf(vals[1][8])); _9x2.setEditable(false);} 
-		if(x == 9 && y == 3){_9x3.setText(String.valueOf(vals[2][8])); _9x3.setEditable(false);} 
-		if(x == 9 && y == 4){_9x4.setText(String.valueOf(vals[3][8])); _9x4.setEditable(false);} 
-		if(x == 9 && y == 5){_9x5.setText(String.valueOf(vals[4][8])); _9x5.setEditable(false);} 
-		if(x == 9 && y == 6){_9x6.setText(String.valueOf(vals[5][8])); _9x6.setEditable(false);} 
-		if(x == 9 && y == 7){_9x7.setText(String.valueOf(vals[6][8])); _9x7.setEditable(false);} 
-		if(x == 9 && y == 8){_9x8.setText(String.valueOf(vals[7][8])); _9x8.setEditable(false);} 
-		if(x == 9 && y == 9){_9x9.setText(String.valueOf(vals[8][8])); _9x9.setEditable(false);} 
+		else if(x == 1 && y == 2){_1x2.setText(String.valueOf(vals[1][0])); _1x2.setEditable(false);} 
+		else if(x == 1 && y == 3){_1x3.setText(String.valueOf(vals[2][0])); _1x3.setEditable(false);} 
+		else if(x == 1 && y == 4){_1x4.setText(String.valueOf(vals[3][0])); _1x4.setEditable(false);} 
+		else if(x == 1 && y == 5){_1x5.setText(String.valueOf(vals[4][0])); _1x5.setEditable(false);} 
+		else if(x == 1 && y == 6){_1x6.setText(String.valueOf(vals[5][0])); _1x6.setEditable(false);} 
+		else if(x == 1 && y == 7){_1x7.setText(String.valueOf(vals[6][0])); _1x7.setEditable(false);} 
+		else if(x == 1 && y == 8){_1x8.setText(String.valueOf(vals[7][0])); _1x8.setEditable(false);} 
+		else if(x == 1 && y == 9){_1x9.setText(String.valueOf(vals[8][0])); _1x9.setEditable(false);} 
+		else if(x == 2 && y == 1){_2x1.setText(String.valueOf(vals[0][1])); _2x1.setEditable(false);} 
+		else if(x == 2 && y == 2){_2x2.setText(String.valueOf(vals[1][1])); _2x2.setEditable(false);} 
+		else if(x == 2 && y == 3){_2x3.setText(String.valueOf(vals[2][1])); _2x3.setEditable(false);} 
+		else if(x == 2 && y == 4){_2x4.setText(String.valueOf(vals[3][1])); _2x4.setEditable(false);} 
+		else if(x == 2 && y == 5){_2x5.setText(String.valueOf(vals[4][1])); _2x5.setEditable(false);} 
+		else if(x == 2 && y == 6){_2x6.setText(String.valueOf(vals[5][1])); _2x6.setEditable(false);} 
+		else if(x == 2 && y == 7){_2x7.setText(String.valueOf(vals[6][1])); _2x7.setEditable(false);} 
+		else if(x == 2 && y == 8){_2x8.setText(String.valueOf(vals[7][1])); _2x8.setEditable(false);} 
+		else if(x == 2 && y == 9){_2x9.setText(String.valueOf(vals[8][1])); _2x9.setEditable(false);} 
+		else if(x == 3 && y == 1){_3x1.setText(String.valueOf(vals[0][2])); _3x1.setEditable(false);} 
+		else if(x == 3 && y == 2){_3x2.setText(String.valueOf(vals[1][2])); _3x2.setEditable(false);} 
+		else if(x == 3 && y == 3){_3x3.setText(String.valueOf(vals[2][2])); _3x3.setEditable(false);} 
+		else if(x == 3 && y == 4){_3x4.setText(String.valueOf(vals[3][2])); _3x4.setEditable(false);} 
+		else if(x == 3 && y == 5){_3x5.setText(String.valueOf(vals[4][2])); _3x5.setEditable(false);} 
+		else if(x == 3 && y == 6){_3x6.setText(String.valueOf(vals[5][2])); _3x6.setEditable(false);} 
+		else if(x == 3 && y == 7){_3x7.setText(String.valueOf(vals[6][2])); _3x7.setEditable(false);} 
+		else if(x == 3 && y == 8){_3x8.setText(String.valueOf(vals[7][2])); _3x8.setEditable(false);} 
+		else if(x == 3 && y == 9){_3x9.setText(String.valueOf(vals[8][2])); _3x9.setEditable(false);} 
+		else if(x == 4 && y == 1){_4x1.setText(String.valueOf(vals[0][3])); _4x1.setEditable(false);} 
+		else if(x == 4 && y == 2){_4x2.setText(String.valueOf(vals[1][3])); _4x2.setEditable(false);} 
+		else if(x == 4 && y == 3){_4x3.setText(String.valueOf(vals[2][3])); _4x3.setEditable(false);} 
+		else if(x == 4 && y == 4){_4x4.setText(String.valueOf(vals[3][3])); _4x4.setEditable(false);} 
+		else if(x == 4 && y == 5){_4x5.setText(String.valueOf(vals[4][3])); _4x5.setEditable(false);} 
+		else if(x == 4 && y == 6){_4x6.setText(String.valueOf(vals[5][3])); _4x6.setEditable(false);} 
+		else if(x == 4 && y == 7){_4x7.setText(String.valueOf(vals[6][3])); _4x7.setEditable(false);} 
+		else if(x == 4 && y == 8){_4x8.setText(String.valueOf(vals[7][3])); _4x8.setEditable(false);} 
+		else if(x == 4 && y == 9){_4x9.setText(String.valueOf(vals[8][3])); _4x9.setEditable(false);} 
+		else if(x == 5 && y == 1){_5x1.setText(String.valueOf(vals[0][4])); _5x1.setEditable(false);} 
+		else if(x == 5 && y == 2){_5x2.setText(String.valueOf(vals[1][4])); _5x2.setEditable(false);} 
+		else if(x == 5 && y == 3){_5x3.setText(String.valueOf(vals[2][4])); _5x3.setEditable(false);} 
+		else if(x == 5 && y == 4){_5x4.setText(String.valueOf(vals[3][4])); _5x4.setEditable(false);} 
+		else if(x == 5 && y == 5){_5x5.setText(String.valueOf(vals[4][4])); _5x5.setEditable(false);} 
+		else if(x == 5 && y == 6){_5x6.setText(String.valueOf(vals[5][4])); _5x6.setEditable(false);} 
+		else if(x == 5 && y == 7){_5x7.setText(String.valueOf(vals[6][4])); _5x7.setEditable(false);} 
+		else if(x == 5 && y == 8){_5x8.setText(String.valueOf(vals[7][4])); _5x8.setEditable(false);} 
+		else if(x == 5 && y == 9){_5x9.setText(String.valueOf(vals[8][4])); _5x9.setEditable(false);} 
+		else if(x == 6 && y == 1){_6x1.setText(String.valueOf(vals[0][5])); _6x1.setEditable(false);} 
+		else if(x == 6 && y == 2){_6x2.setText(String.valueOf(vals[1][5])); _6x2.setEditable(false);} 
+		else if(x == 6 && y == 3){_6x3.setText(String.valueOf(vals[2][5])); _6x3.setEditable(false);} 
+		else if(x == 6 && y == 4){_6x4.setText(String.valueOf(vals[3][5])); _6x4.setEditable(false);} 
+		else if(x == 6 && y == 5){_6x5.setText(String.valueOf(vals[4][5])); _6x5.setEditable(false);} 
+		else if(x == 6 && y == 6){_6x6.setText(String.valueOf(vals[5][5])); _6x6.setEditable(false);} 
+		else if(x == 6 && y == 7){_6x7.setText(String.valueOf(vals[6][5])); _6x7.setEditable(false);} 
+		else if(x == 6 && y == 8){_6x8.setText(String.valueOf(vals[7][5])); _6x8.setEditable(false);} 
+		else if(x == 6 && y == 9){_6x9.setText(String.valueOf(vals[8][5])); _6x9.setEditable(false);} 
+		else if(x == 7 && y == 1){_7x1.setText(String.valueOf(vals[0][6])); _7x1.setEditable(false);} 
+		else if(x == 7 && y == 2){_7x2.setText(String.valueOf(vals[1][6])); _7x2.setEditable(false);} 
+		else if(x == 7 && y == 3){_7x3.setText(String.valueOf(vals[2][6])); _7x3.setEditable(false);} 
+		else if(x == 7 && y == 4){_7x4.setText(String.valueOf(vals[3][6])); _7x4.setEditable(false);} 
+		else if(x == 7 && y == 5){_7x5.setText(String.valueOf(vals[4][6])); _7x5.setEditable(false);} 
+		else if(x == 7 && y == 6){_7x6.setText(String.valueOf(vals[5][6])); _7x6.setEditable(false);} 
+		else if(x == 7 && y == 7){_7x7.setText(String.valueOf(vals[6][6])); _7x7.setEditable(false);} 
+		else if(x == 7 && y == 8){_7x8.setText(String.valueOf(vals[7][6])); _7x8.setEditable(false);} 
+		else if(x == 7 && y == 9){_7x9.setText(String.valueOf(vals[8][6])); _7x9.setEditable(false);} 
+		else if(x == 8 && y == 1){_8x1.setText(String.valueOf(vals[0][7])); _8x1.setEditable(false);} 
+		else if(x == 8 && y == 2){_8x2.setText(String.valueOf(vals[1][7])); _8x2.setEditable(false);} 
+		else if(x == 8 && y == 3){_8x3.setText(String.valueOf(vals[2][7])); _8x3.setEditable(false);} 
+		else if(x == 8 && y == 4){_8x4.setText(String.valueOf(vals[3][7])); _8x4.setEditable(false);} 
+		else if(x == 8 && y == 5){_8x5.setText(String.valueOf(vals[4][7])); _8x5.setEditable(false);} 
+		else if(x == 8 && y == 6){_8x6.setText(String.valueOf(vals[5][7])); _8x6.setEditable(false);} 
+		else if(x == 8 && y == 7){_8x7.setText(String.valueOf(vals[6][7])); _8x7.setEditable(false);} 
+		else if(x == 8 && y == 8){_8x8.setText(String.valueOf(vals[7][7])); _8x8.setEditable(false);} 
+		else if(x == 8 && y == 9){_8x9.setText(String.valueOf(vals[8][7])); _8x9.setEditable(false);} 
+		else if(x == 9 && y == 1){_9x1.setText(String.valueOf(vals[0][8])); _9x1.setEditable(false);} 
+		else if(x == 9 && y == 2){_9x2.setText(String.valueOf(vals[1][8])); _9x2.setEditable(false);} 
+		else if(x == 9 && y == 3){_9x3.setText(String.valueOf(vals[2][8])); _9x3.setEditable(false);} 
+		else if(x == 9 && y == 4){_9x4.setText(String.valueOf(vals[3][8])); _9x4.setEditable(false);} 
+		else if(x == 9 && y == 5){_9x5.setText(String.valueOf(vals[4][8])); _9x5.setEditable(false);} 
+		else if(x == 9 && y == 6){_9x6.setText(String.valueOf(vals[5][8])); _9x6.setEditable(false);} 
+		else if(x == 9 && y == 7){_9x7.setText(String.valueOf(vals[6][8])); _9x7.setEditable(false);} 
+		else if(x == 9 && y == 8){_9x8.setText(String.valueOf(vals[7][8])); _9x8.setEditable(false);} 
+		else if(x == 9 && y == 9){_9x9.setText(String.valueOf(vals[8][8])); _9x9.setEditable(false);} 
 		
 	}
 	
@@ -711,6 +717,7 @@ public class Board extends javax.swing.JFrame {
 				out = false;
 		return out;
 	}
+	
 	
 	private void genNewBoard()
 	{
@@ -724,8 +731,25 @@ public class Board extends javax.swing.JFrame {
 			
 		}
 		
-		//chose shown coords
 		
+		//chose shown coords
+		Random rand = new Random();
+		
+			
+		for(int x = 1; x < 9; x+=3)
+		{
+			for(int y = 1; y <= 9; y+=3)
+			{
+				int amount = rand.nextInt(3) + 3;
+				for (int j = 0; j < amount; j++)
+				{
+					int xx = rand.nextInt(3) + x;
+					int yy = rand.nextInt(3) + y;
+					setValBoard(xx, yy);
+				}
+			}
+		}
+		setValBoard(9, 9);
 	}
 	
 	

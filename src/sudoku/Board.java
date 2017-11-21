@@ -7,6 +7,7 @@ package sudoku;
 
 import java.awt.Color;
 import java.util.Random;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -624,6 +625,8 @@ public class Board extends javax.swing.JFrame {
 	return true;
 	}
 	
+	
+	//Sets text box at x,y to readOnly, colour to red and the text to the given value 
 	public void setValBoard(int x, int y)
 	{
 		if(x == 1 && y == 1){_1x1.setText(String.valueOf(vals[0][0])); _1x1.setEditable(false); _1x1.setForeground(Color.red); } 
@@ -741,7 +744,7 @@ public class Board extends javax.swing.JFrame {
 		{
 			for(int y = 1; y <= 9; y+=3)
 			{
-				int amount = rand.nextInt(3) + 3;
+				int amount = rand.nextInt(5) + 3;
 				for (int j = 0; j < amount; j++)
 				{
 					int xx = rand.nextInt(3) + x;
@@ -761,14 +764,14 @@ public class Board extends javax.swing.JFrame {
 		{
 			//board is filled out
 			if(preformChecks())
-				System.out.println("YOU WIN!!!");
+				JOptionPane.showMessageDialog(null,"YOU WIN!!");
 			else
-				System.out.println("NOT CORRECT!");
+				JOptionPane.showMessageDialog(null,"NOT CORRECT!!");
 		}
 		else
 		{
 			//board not filled return error
-			System.out.println("BOARD IS NOT FINNISHED!");
+			JOptionPane.showMessageDialog(null,"BOARD NOT FINNISHED!");
 		}
         }//GEN-LAST:event_jButton1ActionPerformed
 

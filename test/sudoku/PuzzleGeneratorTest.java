@@ -58,8 +58,8 @@ public class PuzzleGeneratorTest {
         // Test random number generation 
         expected = true;
         Random rand = new Random();
-        int p_index = rand.nextInt(30);
-        if (p_index >= 0 && p_index <= 30) {
+        int p_index = rand.nextInt(5);
+        if (p_index >= 0 && p_index <= 5) {
             result = true;
         }
         else {

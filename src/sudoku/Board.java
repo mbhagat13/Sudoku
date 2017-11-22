@@ -714,7 +714,7 @@ public class Board extends javax.swing.JFrame {
 		
 	}
 	
-	private boolean preformChecks()
+	private boolean performChecks()
 	{
 		boolean out = true;
 		for(Check i : checks)
@@ -764,7 +764,7 @@ public class Board extends javax.swing.JFrame {
 		if(readValsIn())
 		{
 			//board is filled out
-			if(preformChecks())
+			if(performChecks())
 				JOptionPane.showMessageDialog(null,"YOU WIN!!");
 			else
 				JOptionPane.showMessageDialog(null,"NOT CORRECT!!");
@@ -772,7 +772,7 @@ public class Board extends javax.swing.JFrame {
 		else
 		{
 			//board not filled return error
-			JOptionPane.showMessageDialog(null,"BOARD NOT FINNISHED!");
+			JOptionPane.showMessageDialog(null,"BOARD NOT FINISHED!");
 		}
         }//GEN-LAST:event_jButton1ActionPerformed
 

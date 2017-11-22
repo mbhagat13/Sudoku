@@ -737,25 +737,17 @@ public class Board extends javax.swing.JFrame {
 		}
 		
 		
-		//chose shown coords
-		Random rand = new Random();
-		
+		//chose shown coords		
 			
-		for(int x = 1; x < 9; x+=3)
+		for(int x = 0; x < 9; x++)
 		{
-			for(int y = 1; y <= 9; y+=3)
+			for(int y = 0; y < 9; y++)
 			{
-				int amount = rand.nextInt(5) + 3;
-				for (int j = 0; j < amount; j++)
-				{
-					int xx = rand.nextInt(3) + x;
-					int yy = rand.nextInt(3) + y;
-					setValBoard(xx, yy);
-				}
+				if(vals[y][x] != 0)
+					setValBoard(x+1, y+1);
 			}
 		}
 		
-		setValBoard(9, 9);
 	}
 	
 	

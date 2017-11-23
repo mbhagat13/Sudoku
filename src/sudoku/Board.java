@@ -13,11 +13,29 @@ import javax.swing.JOptionPane;
  *
  * @author raymondbaker
  */
-public class Board extends javax.swing.JFrame {
 
+
+
+
+
+
+
+
+public class Board extends javax.swing.JFrame {
+	
 	/**
-	 * Creates new form Board1
-	 */
+	* 
+	* AF(c) for Board b
+	*	c.uservals = b.boardState
+	*	c.vals = b.givenValues
+	*	c.checks = b.differentCheckingAlgorithems
+	* 
+	* 
+	* Rep invariant is:
+	*	userVals != null
+	*	vals != null
+	*	checks != null
+	*/
 	
 	int [][] userVals;
 	int [][] vals;
@@ -37,6 +55,12 @@ public class Board extends javax.swing.JFrame {
 		genNewBoard();
 	}
 
+	boolean repOk()
+	{
+		return userVals != null && vals != null && checks != null;
+	}
+	
+	
 	/**
 	 * This method is called from within the constructor to initialize the
 	 * form. WARNING: Do NOT modify this code. The content of this method is
@@ -442,7 +466,11 @@ public class Board extends javax.swing.JFrame {
 
 	
 
-	
+	/**
+	 * Requires: null
+	 * Modifies:  resets all text box states 
+	 * Effects:
+	 */
 	private void resetAll()
 	{
 		_1x1.setText(" "); _1x1.setEditable(true); _1x1.setForeground(Color.black);
@@ -534,6 +562,14 @@ public class Board extends javax.swing.JFrame {
 	
 	//returns false when textfield is blank
 	//
+	
+		
+	/**
+	 * Requires: null
+	 * Modifies: userVals = textbox vals
+	 * Effects: returns false if all boxes are not filled
+	 */
+	
 	private boolean readValsIn()
 	{
 		try{
@@ -627,7 +663,12 @@ public class Board extends javax.swing.JFrame {
 	}
 	
 	
-	//Sets text box at x,y to readOnly, colour to red and the text to the given value 
+	//
+	/**
+	 * Requires: null
+	 * Modifies: null
+	 * Effects: Sets text box at x,y to readOnly, colour to red and the text to the given value
+	 */
 	public void setValBoard(int x, int y)
 	{
 		if(x == 1 && y == 1){_1x1.setText(String.valueOf(vals[0][0])); _1x1.setEditable(false); _1x1.setForeground(Color.red); } 
@@ -714,6 +755,11 @@ public class Board extends javax.swing.JFrame {
 		
 	}
 	
+	/**
+	 * Requires: null
+	 * Modifies: null
+	 * Effects: returns false if board is not correct returns true otherwise
+	 */
 	private boolean performChecks()
 	{
 		boolean out = true;
@@ -723,6 +769,11 @@ public class Board extends javax.swing.JFrame {
 		return out;
 	}
 	
+	/**
+	 * Requires: null
+	 * Modifies: text box editable 
+	 * Effects:  gets correct values setting the corresponding text box to readOnly, colour to red and the text to the given value
+	 */
 	
 	private void genNewBoard()
 	{
@@ -750,7 +801,12 @@ public class Board extends javax.swing.JFrame {
 		
 	}
 	
-	
+	/**
+	 * Requires: ActionEvent
+	 * Modifies: null
+	 * Effects: if board is filled and correct make popup for prompting a won game
+	 * otherwise prompt why they have failed
+	 */
         private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
 		if(readValsIn())

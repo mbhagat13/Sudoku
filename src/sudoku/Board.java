@@ -55,6 +55,7 @@ public class Board extends javax.swing.JFrame {
 		genNewBoard();
 	}
 
+	
 	boolean repOk()
 	{
 		return userVals != null && vals != null && checks != null;

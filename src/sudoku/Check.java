@@ -9,6 +9,9 @@ package sudoku;
  *
  * @author Meher
  */
-public interface Check {
-  public boolean checkMoves(int [][] uservalues);  
+public abstract class Check {
+  public boolean checkMoves(int [][] uservalues)
+  {
+	  return false;
+  }
 }

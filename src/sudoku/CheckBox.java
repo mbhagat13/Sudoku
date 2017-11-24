@@ -9,7 +9,7 @@ package sudoku;
  *
  * @author Meher
  */
-public class CheckBox implements Check {
+public class CheckBox extends Check {
       
 	@Override
 	public boolean checkMoves(int[][] uservalues) {

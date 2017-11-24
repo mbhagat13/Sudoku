@@ -9,7 +9,7 @@ package sudoku;
  *
  * @author Meher
  */
-public class CheckHorizontal implements Check{
+public class CheckHorizontal extends Check{
       public boolean checkMoves(int [][] uservalues){
             int [] validity; 
 

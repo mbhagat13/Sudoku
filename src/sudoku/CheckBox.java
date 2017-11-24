@@ -26,7 +26,7 @@ public class CheckBox extends Check {
       
         //REQUIRES:: a 2D integer array with completely filled out with integer
         // values between 1 and 9 
-        //MODIFIES: valid
+        //MODIFIES: valid (boolean)
         //EFFECTS: changes valid to true or false based on the values that were
         //entered in the board
 	@Override
@@ -62,7 +62,7 @@ public class CheckBox extends Check {
        public String toString(){
            return (valid + "");
        }
-       //EFFECTS: R
+       //EFFECTS: Returns true or false if the rep is held or not
        public boolean repOk(){
            if(valid || valid ==false){
            return true;

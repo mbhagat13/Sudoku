@@ -24,6 +24,8 @@ import javax.swing.JOptionPane;
 public class Board extends javax.swing.JFrame {
 	
 	/**
+	* Mutable class
+	* 
 	* 
 	* AF(c) for Board b
 	*	c.uservals = b.boardState
@@ -37,10 +39,10 @@ public class Board extends javax.swing.JFrame {
 	*	checks != null
 	*/
 	
-	int [][] userVals;
-	int [][] vals;
+	private int [][] userVals;
+	private int [][] vals;
 	
-	Check[] checks;
+	private Check[] checks;
 	
 	public Board() {
 		initComponents();
@@ -53,6 +55,7 @@ public class Board extends javax.swing.JFrame {
 		checks[2] = new CheckVertical();
 		
 		genNewBoard();
+		System.out.print(toString());
 	}
 
 	
@@ -558,6 +561,27 @@ public class Board extends javax.swing.JFrame {
 		
 		userVals = new int[9][9];
 		vals = new int[9][9];
+	}
+	
+	
+	/**
+	 * Requires: null
+	 * Modifies: null
+	 * Effects: returns board state with zeroes for blanks
+	 */
+	@Override
+	public String toString()
+	{
+		String out = "";
+		for(int y = 0; y < userVals.length; y++)
+		{
+			for(int x = 0; x < userVals[y].length; x++)
+			{
+				out += Integer.toString(userVals[y][x] + vals[y][x]); 
+			}
+			out += '\n';
+		}
+		return out;
 	}
 	
 	

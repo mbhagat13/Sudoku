@@ -10,6 +10,7 @@ package sudoku;
  * @author Meher
  */
 public class CheckHorizontal extends Check{
+    private boolean valid = false;
       public boolean checkMoves(int [][] uservalues){
             int [] validity; 
 
@@ -46,18 +47,23 @@ public class CheckHorizontal extends Check{
                 }         
             for(int i = 0; i<9;i++){
                if(validity[i] != 1){
-			return false;
+                     valid = false;
+                     return valid;
                 } 
 		}
 
             }
-            
-            
-            
-            
-          
-          return true;
-      }
-
-    
+     
+          valid = true;
+          return valid;
+       }
+          public String toString(){
+          return (valid + "");
+       }
+       public boolean repOk(){
+           if(valid || valid ==false){
+           return true;
+           }else
+           return false;
+       }
 }

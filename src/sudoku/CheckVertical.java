@@ -33,7 +33,7 @@ public class CheckVertical extends Check {
 		for (int x = 0; x < 9; x++) {
 			validity = new int[9];
 			for (int y = 0; y < 9; y++) {
-				if (uservalues[y][x] == 1) {
+				if (uservalues[y][x] == 1) { //traverses all columns and sets false if flagged
 					validity[0] = validity[0] + 1;
 				}
 				if (uservalues[y][x] == 2) {

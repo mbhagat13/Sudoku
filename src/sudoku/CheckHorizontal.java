@@ -9,8 +9,27 @@ package sudoku;
  *
  * @author Meher
  */
+
+//Overview
+//Class implements the Algorithim to check if each box in the board is filled
+//correctly
+//Immutable 
+
+//Abstraction Function
+//only instance variable is inhertited from the superclass Check
+//Represents if box is valid or not by a boolean variable
+
+//Rep Invariant:
+//valid must be either true or false;
+
 public class CheckHorizontal extends Check{
     private boolean valid = false;
+        
+    //REQUIRES:: a 2D integer array with completely filled out with integer
+    // values between 1 and 9 
+    //MODIFIES: valid (boolean)
+    //EFFECTS: changes valid to true or false based on the values that were
+    //entered in the board
       public boolean checkMoves(int [][] uservalues){
             int [] validity; 
 
@@ -57,10 +76,13 @@ public class CheckHorizontal extends Check{
           valid = true;
           return valid;
        }
+        //EFFECTS: returns the state of valid which is whether not the board was
+        // filled correctly for the given algorithim      
           public String toString(){
           return (valid + "");
        }
-       public boolean repOk(){
+       //EFFECTS: Returns true or false if the rep is held or not
+        public boolean repOk(){
            if(valid || valid ==false){
            return true;
            }else

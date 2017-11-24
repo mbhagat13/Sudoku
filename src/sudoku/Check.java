@@ -27,10 +27,11 @@ public abstract class Check {
   public abstract boolean checkMoves(int [][] uservalues);
   
  
-    
+   //Effects: Returns the string maniupulation of the abstraction function
    public String toString(){
         return ("");// nothing returned as no instant variables exist
        }
+   //Effects: Returns true or false if the rep is held or not
     public boolean repOk(){
         return true;//true is always returned as rep is always held
     }

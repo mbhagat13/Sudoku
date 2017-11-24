@@ -10,7 +10,7 @@ package sudoku;
  * @author Meher
  */
 public class CheckVertical extends Check {
-
+        private boolean valid = false;
 	public boolean checkMoves(int[][] uservalues) {
 	int[] validity;
 		for (int x = 0; x < 9; x++) {
@@ -46,13 +46,24 @@ public class CheckVertical extends Check {
 			}
 			for (int i = 0; i < 9; i++) {
 				if (validity[i] != i + 1) {
-					return false;
+                                    valid = false;
+                                    return valid;
+
 				}
 			}
 
 		}
+          valid = true;
+          return valid;
 
-		return true;
 	}
-
+       public String toString(){
+           return (valid + "");
+       }
+       public boolean repOk(){
+           if(valid || valid ==false){
+           return true;
+           }else
+           return false;
+       }
 }

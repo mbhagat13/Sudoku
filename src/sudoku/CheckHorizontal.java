@@ -33,7 +33,7 @@ public class CheckHorizontal extends Check{
       public boolean checkMoves(int [][] uservalues){
             int [] validity; 
 
-            for (int x =0;x<9 ;x++){
+            for (int x =0;x<9 ;x++){//traverses all rows and sets false if flagged
               validity = new int[9];
                 for (int y =0;y<9 ;y++){
                 if(uservalues[x][y]== 1){
